@@ -13,10 +13,12 @@
 /* Лента слайдов */
 .slick-track{
     display: flex;
-	justify-content: space-between;
+	justify-content: space-around;
 }
 /* Слайд */
-.slick-slide{}
+.slick-slide{
+    margin: 0 5px;
+}
 /* Слайд активный (показывается) */
 .slick-slide.slick-active{}
 /* Слайд основной */

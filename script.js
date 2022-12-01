@@ -18,7 +18,16 @@ $(document).ready(function(){
         infinite: true,
         speed: 500,
         arrows: true,
-        dots: true
+        dots: true,
+		responsive: [
+			{
+				breakpoint: 1380,
+				settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1
+				}
+			}
+		]
     });
   });
 
@@ -77,11 +86,33 @@ buttonToTop.addEventListener('click', () => {
 
 const popup = document.querySelector('.popup');
 const popupClose = document.querySelector('.popup__close');
-
-setTimeout(() => {
-	popup.classList.add('showPopup');
+if(popup) {
+	setTimeout(() => {
+		popup.classList.add('showPopup');
 }, 5000);
 
 popupClose.addEventListener('click', () => {
 	popup.classList.remove('showPopup');
-})
+});
+}
+
+
+const iconMenu = document.querySelector('.menu__icon');
+if(iconMenu) {
+	const navMenu = document.querySelector('.header__nav');
+	iconMenu.addEventListener("click", function(e) {
+		iconMenu.classList.toggle('active');
+		navMenu.classList.toggle('active');
+	})
+}
+
+const navBtns = document.querySelector('.nav__btns');
+const headerBtns = document.querySelector('.header__btns');
+const body = document.querySelector('body');
+
+if(body.offsetWidth < 986) {
+	headerBtns.classList.add('hide');
+	navBtns.classList.remove('hide')
+}
+
+

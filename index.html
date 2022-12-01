@@ -13,45 +13,58 @@
 </head>
 <body>
     <div class="wrapper">
-        <div class="header">
+        <header class="header">
             <div class="header__body">
                 <div class="header__logo">
                     <a href="#"><img class="header__img" src="img/Logo.svg" alt=""></a>
                 </div>
-                <nav class="header__nav">
-                    <ul class="nav__menu">
-                        <li class="nav__item">
-                            <a href="" class="nav__link">
-                                О нас
-                            </a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="" class="nav__link">
-                                Преимущества
-                            </a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="" class="nav__link">
-                                Отзывы
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
+                <div class="header__menu menu">
+                    <div class="menu__icon">
+                        <span></span>
+                    </div>
+                    <nav class="header__nav">
+                        <ul class="nav__menu">
+                            <li>
+                                <a href="" class="nav__link">
+                                    О нас
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" class="nav__link">
+                                    Преимущества
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" class="nav__link">
+                                    Отзывы
+                                </a>
+                            </li>
+                            <div class="nav__btns hide">
+                                
+                                    <button class="header__enter">Вход</button>
+                                
+                                    <button class="header__reg">Регистрация</button>
+
+                            </div>
+                        </ul>
+                    </nav>
+                </div>
                 <div class="header__btns">
                     <button class="header__enter">Вход</button>
                     <button class="header__reg">Регистрация</button>
                 </div>
             </div>
-        </div>
+        </header>
         <main class="content">
             <!-- <img class="coins" src="img/Coins.png" alt=""> -->
             <section class="main">
                 <div class="container">
                     <div class="main__content">
                         <div class="main__left">
-                            <h1 class="main__title">Зарабатывайте</h1>
-                            <h1 class="main__title text-white">от $100 в день</h1>
-                            <h1 class="main__title">на арбитраже котировок</h1>
+                            <!-- <h1 class="main__title title">Зарабатывайте</h1>
+                            <h1 class="main__title title text-white">от $100 в день</h1>
+                            <h1 class="main__title title">на арбитраже котировок</h1> -->
+                            <h1 class="main__title title-big">Зарабатывайте<br><span class="text-white">от $100 в день</span><br>на арбитраже<br>котировок</h1>
                             <p class="main__subtitle">Получите доступ к автоматизированному инструменту для арбитража и сопровождению от экспертов для быстрого старта</p>
                             <button class="main__btn btn-orange">
                                 Получить доступ
@@ -119,8 +132,9 @@
                             </div>                  
                         </div>
                         <div class="about__right">
-                            <h2 class="about__title">Как работает автоматизация</h2>
-                            <h2 class="about__subtitle gradient">арбитража котировок</h2>
+                            <!-- <h2 class="about__title">Как работает автоматизация</h2>
+                            <h2 class="about__subtitle gradient">арбитража котировок</h2> -->
+                            <h2 class="about__title title-norm">Как работает автоматизация <span class="gradient">арбитража котировок</span></h2>
                             <p class="about__text">
                                 Чтобы зарабатывать на трейдинге, необязательно угадывать движение цен финансовых активов или разбираться в сложных графиках.
                             </p>
@@ -157,7 +171,7 @@
             <section class="education">
                 <div class="container">
                     <div class="education__content">
-                        <p class="education__title gradient">Вам не нужно<br>разбираться во всем<br>самостоятельно</p>
+                        <h2 class="education__title title-small gradient">Вам не нужно<br>разбираться во всем<br>самостоятельно</h2>
                         <p class="education__subtitle">Сразу после регистрации вы пройдете<br>обучение от экспертов с опытом<br>в трейдинге более 8 лет</p>
                     </div>
                 </div>
@@ -191,8 +205,9 @@
                             </div>
                         </div>
                         <div class="steps__info step4">
-                            <h2 class="steps__title text-white">3 шага</h2>
-                            <h2 class="steps__title">до первой прибыли</h2>
+                            <!-- <h2 class="steps__title text-white">3 шага</h2>
+                            <h2 class="steps__title">до первой прибыли</h2> -->
+                            <h2 class="steps__title title-big" title><span class="text-white">3 шага</span><br>до первой<br>прибыли</h2>
                             <p class="steps__subtitle">Вы получите инструмент для автоматической торговли бинарными опционами, научитесь строить прибыльный бизнес и станете частью комьюнити трейдеров.</p>
                             <!-- <button class="steps__btn btn-orange step5">
                                 Получить доступ
@@ -236,15 +251,15 @@
                 <section class="theory">
                     <div class="container">
                         <div class="theory__content">
-                            <h2 class="theory__title ">Это не просто</h2>
+                            <h2 class="theory__title title-big">Это не просто</h2>
                             <div class="theory__subtitle">
-                                <h2 class="theory__title gradient">теория</h2>
+                                <h2 class="theory__title title-big gradient">теория</h2>
                                 <p class="theory__text">Вы получите практические рекомендации о том, как и с помощью чего торговать на опережении котировок и успешно закрывать сделки</p>
                             </div>
                             <div class="theory__info">
                                 <div class="theory__item">
                                     <img class="theory__img" src="img/icon_edu.png" alt="">
-                                    <div class="theory__name">
+                                    <div class="theory__name title-norm">
                                         Обучение и сопровождение
                                     </div>
                                     <div class="theory__text">
@@ -253,7 +268,7 @@
                                 </div>
                                 <div class="theory__item">
                                     <img class="theory__img" src="img/icon_edu.png" alt="">
-                                    <div class="theory__name">
+                                    <div class="theory__name title-norm">
                                         Партнерская программа
                                     </div>
                                     <div class="theory__text">
@@ -262,7 +277,7 @@
                                 </div>
                                 <div class="theory__item">
                                     <img class="theory__img" src="img/icon_edu.png" alt="">
-                                    <div class="theory__name">
+                                    <div class="theory__name title-norm">
                                         Международное комьюнити
                                     </div>
                                     <div class="theory__text">
@@ -271,7 +286,7 @@
                                 </div>
                                 <div class="theory__item">
                                     <img class="theory__img" src="img/icon_edu.png" alt="">
-                                    <div class="theory__name">
+                                    <div class="theory__name title-norm">
                                         Финансовая свобода
                                     </div>
                                     <div class="theory__text">
@@ -280,7 +295,7 @@
                                 </div>
                                 <div class="theory__item">
                                     <img class="theory__img" src="img/icon_edu.png" alt="">
-                                    <div class="theory__name">
+                                    <div class="theory__name title-norm">
                                         Удобные инструменты
                                     </div>
                                     <div class="theory__text">
@@ -289,7 +304,7 @@
                                 </div>
                                 <div class="theory__item">
                                     <img class="theory__img" src="img/icon_edu.png" alt="">
-                                    <div class="theory__name">
+                                    <div class="theory__name title-norm">
                                         Простой алгоритм
                                     </div>
                                     <div class="theory__text">
@@ -306,7 +321,7 @@
                 <div class="container">
                     <div class="cta1__content">
                         <h2 class="cta1__title gradient">Получите доступ к инструменту, пройдите обучение</h2>
-                        <h2 class="cta1__subtitle">и уже завтра получайте прибыль</h2>
+                        <h2 class="cta1__subtitle title-norm">и уже завтра получайте прибыль</h2>
                         <button class="cta1__btn btn-orange">
                             Получить доступ
                             <svg class="icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
@@ -320,8 +335,9 @@
                 <div class="container">
                     <div class="results__content">
                         <div class="results__left">
-                            <h2 class="results__title text-white">результаты</h2>
-                            <h2 class="results__title">наших учеников</h2>
+                            <!-- <h2 class="results__title text-white">результаты</h2>
+                            <h2 class="results__title">наших учеников</h2> -->
+                            <h2 class="results__title title-big"><span class="text-white">результаты</span><br>наших<br>учеников</h2>
                             <div class="results__info">
                                 <div class="results__item">
                                     <div class="results__count gradient">
@@ -574,7 +590,7 @@
                 <section class="cta2">
                     <div class="container">
                         <div class="cta2__content">
-                            <h2 class="cta2__title">
+                            <h2 class="cta2__title title-big">
                                 Сделайте первый шаг на пути к финансовой свободе
                             </h2>
                             <button class="cta2__reg btn-orange">
@@ -618,7 +634,7 @@
             </div>
         </main>
     </div>
-    <!-- <div class="popup">
+    <div class="popup">
         <div class="popup__body">
             <div class="popup__content">
                 <a href="#" class="popup__close">X</a>
@@ -636,7 +652,7 @@
                 </button>
             </div>
         </div>
-    </div> -->
+    </div>
     <button class="buttonTop show">
         ^
     </button>
